@@ -1,0 +1,71 @@
+  
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    .red-text {
+      color: red;
+    }
+    p {
+      font-size: 16px;
+      font-family: monospace;
+    }
+    h2 {
+      font-family: Lobster, monospace;
+    }
+    .smaller-image {
+      width: 100px;
+    }
+    .thick-green-border {
+      border-width: 10px;
+      border-color: green;
+      border-style: solid;
+      border-radius: 50%;
+    }
+    #cat-photo-form {
+      background-color: green;
+    }
+    [type="checkbox"] {
+      margin: 10px 0px 15px 0px;
+    }
+  </style>
+  <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="Relaxing cat"></a>
+  <h2 class="red-text">CatPhotoApp</h2>
+  <main>
+    <p class="red-text">Click me to <a href="#footer">Jump to Bottom</a></p>
+    <p>Click me to <a href="#">Jump to Top</a></p>
+    <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+
+    <div>
+      <p>Things cats like:</p>
+      <ul>
+        <li>Snacks</li>
+        <li>Naps</li>
+        <li>Head Rub</li>
+      </ul>
+      <p>Things cats dislike:</p>
+      <ol>
+        <li>Bath</li>
+        <li>Hugs</li>
+        <li>Belly Rub</li>
+      </ol>
+    </div>
+    <form id="cat-photo-form" action="/submit-cat-photo">
+      <input type="text" placeholder="cat photo URL" required>
+      <label for="indoor"> 
+        <input type="radio" name="indoor-outdoor" id="indoor" checked> Indoor  
+      </label>
+      <label for="outdoor"> 
+        <input type="radio" name="indoor-outdoor" id="outdoor"> Outdoor
+      </label>
+      <label for="shy">
+        <input type="checkbox" name="personality" id="shy" checked> Shy
+      </label>
+      <label for="happy">
+        <input type="checkbox" name="personality" id="happy"> Happy
+      </label>
+      <label for="sleepy">
+        <input type="checkbox" name="personality" id="sleepy"> Sleepy
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer id="footer"> Hello</footer>
